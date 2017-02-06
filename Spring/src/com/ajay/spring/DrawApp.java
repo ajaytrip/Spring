@@ -17,6 +17,7 @@ public class DrawApp {
 		ApplicationContext context= new ClassPathXmlApplicationContext("Spring.xml");
 		Triangle obj = (Triangle) context.getBean("triangle");
 		obj.draw();
+		System.out.println("done");
 
 	}
 
