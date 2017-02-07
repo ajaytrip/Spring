@@ -14,10 +14,14 @@ public class DrawApp {
 		//Triangle triangle = new Triangle();
 		
 		//BeanFactory factory = new XmlBeanFactory (new FileSystemResource("spring.xml"));
-		ApplicationContext context= new ClassPathXmlApplicationContext("Spring.xml");
+		/*ApplicationContext context= new ClassPathXmlApplicationContext("Spring.xml");
 		Triangle obj = (Triangle) context.getBean("triangle");
+		obj.draw();*/
+		
+		ApplicationContext context= new ClassPathXmlApplicationContext("CollectionSpring.xml");
+		Polygon obj = (Polygon) context.getBean("polygon");
 		obj.draw();
-		System.out.println("done");
+
 
 	}
 
