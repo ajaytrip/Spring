@@ -18,8 +18,8 @@ public class DrawApp {
 		Triangle obj = (Triangle) context.getBean("triangle");
 		obj.draw();*/
 		
-		ApplicationContext context= new ClassPathXmlApplicationContext("CollectionSpring.xml");
-		Polygon obj = (Polygon) context.getBean("polygon");
+		ApplicationContext context= new ClassPathXmlApplicationContext("SpringAutowire.xml");
+		Triangle obj = (Triangle) context.getBean("triangle");
 		obj.draw();
 
 

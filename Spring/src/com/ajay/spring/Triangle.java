@@ -8,6 +8,7 @@ public class Triangle {
 	
 
 	void draw(){
+		System.out.println("hello triangle");
 		System.out.println(	 "point1 = " + getPoint1().getX() + " " + getPoint1().getY()
 							+"point2 = " + getPoint2().getX() + " " + getPoint2().getY()
 							+"point3 = " + getPoint3().getX() + " " + getPoint3().getY()
