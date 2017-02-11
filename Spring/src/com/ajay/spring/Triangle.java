@@ -1,6 +1,8 @@
 package com.ajay.spring;
 
-public class Triangle {
+import org.springframework.beans.factory.BeanNameAware;
+
+public class Triangle implements BeanNameAware	{
 	private Point point1;
 	private Point point2;
 	private Point point3;
@@ -49,6 +51,13 @@ public class Triangle {
 
 	public void setPoint3(Point point3) {
 		this.point3 = point3;
+	}
+
+
+
+	public void setBeanName(String beanName) {
+		System.out.println("bean name = "+beanName);
+		
 	}
 
 
