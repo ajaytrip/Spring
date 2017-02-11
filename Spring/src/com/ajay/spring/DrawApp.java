@@ -14,13 +14,13 @@ public class DrawApp {
 		//Triangle triangle = new Triangle();
 		
 		//BeanFactory factory = new XmlBeanFactory (new FileSystemResource("spring.xml"));
-		/*ApplicationContext context= new ClassPathXmlApplicationContext("Spring.xml");
-		Triangle obj = (Triangle) context.getBean("triangle");
-		obj.draw();*/
-		
-		ApplicationContext context= new ClassPathXmlApplicationContext("SpringAutowire.xml");
+		ApplicationContext context= new ClassPathXmlApplicationContext("Spring.xml");
 		Triangle obj = (Triangle) context.getBean("triangle");
 		obj.draw();
+		
+/*		ApplicationContext context= new ClassPathXmlApplicationContext("BeanDefinitionInheritance.xml");
+		Triangle obj = (Triangle) context.getBean("triangle1");
+		obj.draw();*/
 
 
 	}

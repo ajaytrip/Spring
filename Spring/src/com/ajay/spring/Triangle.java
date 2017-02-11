@@ -11,10 +11,9 @@ public class Triangle implements BeanNameAware	{
 
 	void draw(){
 		System.out.println("hello triangle");
-		System.out.println(	 "point1 = " + getPoint1().getX() + " " + getPoint1().getY()
-							+"point2 = " + getPoint2().getX() + " " + getPoint2().getY()
-							+"point3 = " + getPoint3().getX() + " " + getPoint3().getY()
-							);
+		System.out.println(	 "point1 = " + getPoint1().getX() + " " + getPoint1().getY());
+		System.out.println(	 "point2 = " + getPoint2().getX() + " " + getPoint2().getY());
+		System.out.println(	 "point3 = " + getPoint3().getX() + " " + getPoint3().getY());
 	}
 
 
@@ -60,6 +59,12 @@ public class Triangle implements BeanNameAware	{
 		
 	}
 
-
+	public void initFunc(){
+		System.out.println("initializing func");
+	}
+	
+	public void cleanUpFunc(){
+		System.out.println("cleanUp func");
+	}
 
 }
