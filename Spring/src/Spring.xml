@@ -26,4 +26,6 @@
 		<property name="x" value="2" />
 		<property name="y" value="2" />
 	</bean>
+	
+	<bean class="com.ajay.spring.MyBeanPostProcessor" />
 </beans>
