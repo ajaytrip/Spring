@@ -20,7 +20,7 @@ public class DrawApp {
 		
 /*		ApplicationContext context= new ClassPathXmlApplicationContext("BeanDefinitionInheritance.xml");
 		Triangle obj = (Triangle) context.getBean("triangle1");
-		obj.draw();*/
+		obj.draw();*/ 
 
 
 	}

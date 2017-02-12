@@ -18,8 +18,8 @@
 	</bean>
 
 	<bean id="point2" class="com.ajay.spring.Point">
-		<property name="x" value="1" />
-		<property name="y" value="5" />
+		<property name="x" value="${point2.pointX}" />
+		<property name="y" value="${point2.pointX}" />
 	</bean>
 
 	<bean id="point3" class="com.ajay.spring.Point">
@@ -28,4 +28,8 @@
 	</bean>
 	
 	<bean class="com.ajay.spring.MyBeanPostProcessor" />
+	<!-- bean class="com.ajay.spring.MyBeanFactoryPostProcessor" / -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="Config.Property" />
+	</bean>
 </beans>
