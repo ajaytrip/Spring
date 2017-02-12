@@ -1,15 +1,14 @@
 package com.ajay.spring;
 
 import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.beans.factory.annotation.Required;
 
-public class Triangle implements BeanNameAware	{
+public class Triangle implements BeanNameAware, Shape	{
 	private Point point1;
 	private Point point2;
 	private Point point3;
 	
-	
-
-	void draw(){
+	public void draw(){
 		System.out.println("hello triangle");
 		System.out.println(	 "point1 = " + getPoint1().getX() + " " + getPoint1().getY());
 		System.out.println(	 "point2 = " + getPoint2().getX() + " " + getPoint2().getY());
@@ -17,7 +16,7 @@ public class Triangle implements BeanNameAware	{
 	}
 
 
-
+	@Required
 	public Point getPoint1() {
 		return point1;
 	}
